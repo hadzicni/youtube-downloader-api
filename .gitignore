@@ -9,7 +9,8 @@ env/
 .env
 
 # downloads
-downloads/
+downloads/*
+!downloads/.gitkeep
 
 # VS Code
 .vscode/
