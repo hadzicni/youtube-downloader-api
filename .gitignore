@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# env files
+.env
+
+# downloads
+downloads/
+
+# VS Code
+.vscode/
