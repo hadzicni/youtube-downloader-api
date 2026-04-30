@@ -369,9 +369,3 @@ You are responsible for ensuring that all downloaded media complies with:
 - FFmpeg
 - SQLite
 - Docker
-
----
-
-# License
-
-Private internal usage.
