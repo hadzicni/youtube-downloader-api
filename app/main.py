@@ -23,7 +23,15 @@ def create_app() -> FastAPI:
     settings.database_path.parent.mkdir(parents=True, exist_ok=True)
     init_db()
 
-    app = FastAPI(title="Private YouTube Downloader API v2")
+    app = FastAPI(
+        title="Private YouTube Downloader API v2",
+        description="Private FastAPI wrapper around yt-dlp for video analysis, search, and downloads.",
+        version="2.0.0",
+        docs_url="/docs",
+        redoc_url="/redoc",
+        openapi_url="/openapi.json",
+        swagger_ui_parameters={"persistAuthorization": True},
+    )
 
     app.add_middleware(
         RateLimitMiddleware,
