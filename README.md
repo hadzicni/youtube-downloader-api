@@ -58,6 +58,7 @@ Status values:
 - `running`
 - `finished`
 - `failed`
+- `expired`
 
 ## Security Improvements
 
@@ -281,7 +282,7 @@ Body:
 
 ```json
 {
-  "url": "lofi hip hop"
+  "query": "lofi hip hop"
 }
 ```
 
@@ -347,6 +348,11 @@ Optional future upgrades:
 - Rate limiting
 - User accounts
 - Automatic scheduled cleanup
+
+Optional rate-limit env vars:
+
+- `RATE_LIMIT_API_KEY_PER_MINUTE`
+- `RATE_LIMIT_IP_PER_MINUTE`
 
 ---
 
