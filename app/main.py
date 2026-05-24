@@ -27,10 +27,9 @@ def create_app() -> FastAPI:
         title="Private YouTube Downloader API v2",
         description="Private FastAPI wrapper around yt-dlp for video analysis, search, and downloads.",
         version="2.0.0",
-        docs_url="/docs",
-        redoc_url="/redoc",
-        openapi_url="/openapi.json",
-        swagger_ui_parameters={"persistAuthorization": True},
+        docs_url=None,
+        redoc_url=None,
+        openapi_url=None,
     )
 
     app.add_middleware(
