@@ -1,7 +1,7 @@
 services:
-  ytapi:
-    build: .
-    container_name: youtube_downloader_api
+  youtube-downloader-api:
+    image: registry.svc.lan/backend/youtube-downloader-api:latest
+    container_name: youtube-downloader-api
     restart: unless-stopped
     ports:
       - '8000:8000'
